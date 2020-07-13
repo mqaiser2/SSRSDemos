@@ -13,7 +13,8 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>AdvDataSource</DataSourceName>
-        <CommandText>Select * from Employees</CommandText>
+        <CommandText>SELECT EmployeeID, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo, PhotoPath
+FROM     Employees</CommandText>
       </Query>
       <Fields>
         <Field Name="EmployeeID">
@@ -126,7 +127,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -148,6 +149,9 @@
                       <CellContents>
                         <Textbox Name="Textbox3">
                           <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Fields!FirstName.Value</SortExpression>
+                          </UserSort>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -172,6 +176,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -320,6 +325,10 @@
                     <CellContents>
                       <Textbox Name="Textbox7">
                         <CanGrow>true</CanGrow>
+                        <UserSort>
+                          <SortExpression>=Fields!Country.Value</SortExpression>
+                          <SortExpressionScope>Country</SortExpressionScope>
+                        </UserSort>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
@@ -355,6 +364,10 @@
                         <CellContents>
                           <Textbox Name="Textbox9">
                             <CanGrow>true</CanGrow>
+                            <UserSort>
+                              <SortExpression>=Fields!Region.Value</SortExpression>
+                              <SortExpressionScope>Region</SortExpressionScope>
+                            </UserSort>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
@@ -390,6 +403,11 @@
                             <CellContents>
                               <Textbox Name="Textbox11">
                                 <CanGrow>true</CanGrow>
+                                <UserSort>
+                                  <SortExpression>=Fields!City.Value</SortExpression>
+                                  <SortExpressionScope>City</SortExpressionScope>
+                                  <SortTarget>DataSet1</SortTarget>
+                                </UserSort>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
