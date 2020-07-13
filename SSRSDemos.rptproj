@@ -49,11 +49,12 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="AdvDataSrouce.rds" />
+    <DataSource Include="NorthWindDataSrouce.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="21_InteractiveSortingDemo1.rdl" />
     <Report Include="22_InteractiveSortingWithGroups.rdl" />
+    <Report Include="23_DrillDownReportsDemo.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
