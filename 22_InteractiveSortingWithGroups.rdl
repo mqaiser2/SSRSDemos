@@ -176,7 +176,6 @@ FROM     Employees</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -406,7 +405,6 @@ FROM     Employees</CommandText>
                                 <UserSort>
                                   <SortExpression>=Fields!City.Value</SortExpression>
                                   <SortExpressionScope>City</SortExpressionScope>
-                                  <SortTarget>DataSet1</SortTarget>
                                 </UserSort>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
