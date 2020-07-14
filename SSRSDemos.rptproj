@@ -58,6 +58,8 @@
     <Report Include="23_DrillDownReportsDemo.rdl" />
     <Report Include="24_DynamicColumnVisibilityDemo.rdl" />
     <Report Include="25_ConditionalFormattingDemo.rdl" />
+    <Report Include="26_DocumentMapDemo.rdl" />
+    <Report Include="28_GotoBookMarkActionDemo.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
